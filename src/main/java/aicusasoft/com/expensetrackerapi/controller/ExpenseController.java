@@ -22,6 +22,11 @@ public class ExpenseController {
     @Autowired
     private ExpenseService expenseService;
 
+    @GetMapping("/")
+    public String test() {
+        return "testing versioning";
+    }
+
     @GetMapping("/expenses")
     public List<Expense> getAllExpenses(Pageable page) {
         return expenseService.getAllExpenses(page).toList();
