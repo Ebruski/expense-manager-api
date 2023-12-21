@@ -22,7 +22,7 @@ public class ExpenseController {
     @Autowired
     private ExpenseService expenseService;
 
-    @GetMapping("/")
+    @GetMapping("/testv")
     public String test() {
         return "testing versioning";
     }

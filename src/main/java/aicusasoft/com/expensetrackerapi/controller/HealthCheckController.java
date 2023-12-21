@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HealthCheckController {
 
-    @GetMapping("/")
+    @GetMapping("/healthv")
     public ResponseEntity<VersionModel> version(){
         VersionModel vm = new VersionModel();
 
